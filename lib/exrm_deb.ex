@@ -7,6 +7,8 @@ defmodule ExrmDeb do
   alias Mix.Project
 
   def start_build(config) do
+    info("Starting build of debian package.")
+
     ExrmDeb.remove_deb_dir
     deb_root = initialize_dir()
 
